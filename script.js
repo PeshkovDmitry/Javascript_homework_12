@@ -15,3 +15,4 @@ stopButtonEl.addEventListener('click', () => videoEl.currentTime = 0);
 rewindButtonEl.addEventListener('click', () => videoEl.currentTime -= 5);
 forwardButtonEl.addEventListener('click', () => videoEl.currentTime += 5);
 videoProgressBar.addEventListener('input', () => videoEl.currentTime = videoEl.duration * videoProgressBar.value / 100);
+soundProgressBar.addEventListener('input', () => videoEl.volume = soundProgressBar.value);
